@@ -1,11 +1,10 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Link } from 'expo-router';
 
 export default function HomeScreen() {
   return (
@@ -22,8 +21,8 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
+        <ThemedText type="subtitle">Suhag Software developer 😁</ThemedText>
+        {/* <ThemedText>
           Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
           Press{' '}
           <ThemedText type="defaultSemiBold">
@@ -34,9 +33,9 @@ export default function HomeScreen() {
             })}
           </ThemedText>{' '}
           to open developer tools.
-        </ThemedText>
+        </ThemedText> */}
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
+      {/* <ThemedView style={styles.stepContainer}>
         <Link href="/modal">
           <Link.Trigger>
             <ThemedText type="subtitle">Step 2: Explore</ThemedText>
@@ -73,7 +72,7 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
-      </ThemedView>
+      </ThemedView> */}
     </ParallaxScrollView>
   );
 }
